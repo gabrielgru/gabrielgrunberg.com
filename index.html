@@ -4,38 +4,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gabriel Grunberg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #dad7cd;
+      --text-primary: #344e41;
+      --text-secondary: #3a5a40;
+      --link: #588157;
+      --link-hover: #3a5a40;
+    }
+
     body {
-      font-family: sans-serif;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-secondary);
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      min-height: 100vh;
       text-align: center;
     }
+
     h1 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900; /* Inter Black */
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      color: var(--text-primary);
     }
-    p {
+
+    p.description {
+      font-weight: 900; /* Inter Black */
       font-size: 1.2rem;
       max-width: 600px;
       margin-bottom: 2rem;
+      line-height: 1.6;
     }
+
+    p.email {
+      font-weight: 400; /* Inter Regular */
+      font-size: 1.1rem;
+    }
+
     a {
-      color: #0070f3;
+      color: var(--link);
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>Gabriel Grunberg</h1>
-  <p>Consultor en automatización y soluciones de inteligencia artificial para empresas.</p>
-  <p>Contacto: <a href="mailto:info@gabrielgrunberg.com">info@gabrielgrunberg.com</a></p>
+  <div class="container">
+    <h1>Gabriel Grunberg</h1>
+    <p class="description">Consultor en automatización y soluciones de inteligencia artificial para empresas.</p>
+    <p class="email">Contacto: <a href="mailto:info@gabrielgrunberg.com">info@gabrielgrunberg.com</a></p>
+  </div>
 </body>
 </html>
